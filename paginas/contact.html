@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro María</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="menu">
+                <div class="logo-y-menu">
+                    <a href="../index.html"><img src="../imagenes/logo.png" alt="" ></a>
+                    <img class=menu-icon src="../imagenes/menu.png" alt="" width="30px">
+                    <nav>
+                        <ul>
+                            <li><a href="../paginas/bio.html">Bio</a></li>
+                            <li><a href="../paginas/music.html">Music</a></li>
+                            <li><a href="../paginas/events.html">Gallery</a></li>
+                            <li><a href="../paginas/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="boton">
+                    <a href="https://www.junodownload.com/artists/Alejandro+Maria/releases/" target="_blank">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="form">
+        <div class="contenedor">
+            <h2>Want to say hello?</h2>
+            <p>If you'd like to work together on a project, please leave your info at the the project planner form below.</p>
+            <iframe height="1628" title="Embedded Wufoo Form" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://rediberry.wufoo.com/embed/z18rrlac183rwuj/"> <a href="https://rediberry.wufoo.com/forms/z18rrlac183rwuj/">Fill out my Wufoo form!</a> </iframe>
+            <!--<div id="wufoo-z18rrlac183rwuj"> Fill out my <a href="https://rediberry.wufoo.com/forms/z18rrlac183rwuj">online form</a>. </div> <script type="text/javascript"> var z18rrlac183rwuj; (function(d, t) { var s = d.createElement(t), options = { 'userName':'rediberry', 'formHash':'z18rrlac183rwuj', 'autoResize':true, 'height':'898', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z18rrlac183rwuj = new WufooForm(); z18rrlac183rwuj.initialize(options); z18rrlac183rwuj.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>-->
+        </div>
+    </form>
+    </section>
+    <footer>
+        <div class="contenedor">
+            <div class="redes">
+                <a href="https://open.spotify.com/artist/5W0Agbc0JHIriXYN7Xq9gr?si=_zRhFvkySnG5nzvzlF4eVA" target="_blank"><i class="fab fa-spotify"></i></a> 
+                <a href="https://www.facebook.com/musicbyalejandromaria/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/musicbyalejandromaria" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <h3>© 2022 - Music by Alejandro Maria</h3>
+            <p>Buenos Aires, Argentina</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".menu-icon").click(function(){
+                $("header nav").slideToggle()
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('header').addClass('header2');
+                } else {
+                    $('header').removeClass('header2');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

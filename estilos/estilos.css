@@ -1,0 +1,910 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: "krona one" ;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+.contenedor{
+    width:100%;
+    max-width:1280px;
+    margin:auto;
+}
+header{
+    background-image:url(../imagenes/encabezado.jpg);
+    background-size: cover;
+    height:80vh;
+}
+header .menu{
+    display: flex;
+    flex-direction: column; 
+}
+header .logo-y-menu {
+    display:flex; 
+    align-items:center;
+    flex-direction: column; 
+}
+nav {
+    background: yellow;
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    display: none;
+    left: 0;
+}
+nav ul{
+    display:flex;
+    flex-direction: column;
+}
+nav ul li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+nav, ul, li a{
+    color: black;
+    font-size: 12px;
+    margin: bottom 10px;
+}
+nav ul li a:hover {
+    color: white;
+}
+header .boton a, .botones a, #discografia a{
+    background: yellow;
+    color: black;
+    padding: 14px 19px;
+    line-height: 50px;
+    font-size: 13px;
+}
+.scrollDown{
+    display:flex;
+    height: 100%;
+    justify-content: center;
+}
+.scrollDown img{
+    margin-top: 0px;
+}
+.scrollDown img:hover{
+    transform: scale(1.10);
+    transition: all 0.5s;
+}
+.boton {
+    margin-top: 220px;
+    display: none;
+}
+.boton:hover {
+    transition: all 1.2s;
+    filter:grayscale(1);
+}
+header .logo-y-menu {
+    justify-content: space-between; 
+}
+header .titular{
+    margin-top: 19vh;
+    color:#fff;
+}
+h1{
+    font-size: 32px;
+    padding-top: 20px;
+}
+H1:hover{
+    transform: scale(1.01);
+    transition: all 0.5s;
+}
+.blanco {
+    background: #fff !important;
+}
+#discografia {
+    background: #000;
+    color:#fff;
+    padding: 120px 0;
+}
+h2 {
+    font-size: 27px;
+}
+h4{
+    margin: 0;
+    color: yellow;
+    border: 1px solid #ccc;
+    width: 120px;
+    padding: 10px;
+    border-radius:20px;
+}
+#discografia .contenedor{
+    display: flex; 
+    align-items:center; 
+    flex-direction: column; 
+}
+#discografia span{
+    color:yellow;
+    text-decoration: underline;
+}
+.titular span{
+    color:yellow;
+}
+#discografia h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#discografia p{
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 40px;
+}
+#discografia img{
+    width: 100%;
+}
+#discografia .texto{
+    width: 100%;
+}
+#discografia .foto{
+    width: 82%;
+    margin-top: 20px;
+}
+#discografia .foto:hover{
+    transition: all 1.2s;
+    filter: grayscale(1);
+}
+.contenedor-textos {
+    display: flex;
+    flex-direction:column; 
+}
+#about h4, #events h4, #bio h4{
+    color: #000;
+    border: 1px solid black;
+    text-align: center;
+}
+#about p, #tour p, footer p, #events p, #bio p{
+    font-family: "jost";
+}
+.negro{
+    background: #aaa !important;
+}
+#about, #events{
+    padding: 100px 0;
+}
+#bio{
+    padding: 30px 20px;
+}
+#tour {
+    background: yellow;
+    padding: 60px 0;
+}
+#tour .contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#about .contenedor, #bio .contenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#tour img {
+    width: 100%;
+}
+#tour img:hover {
+    width: 100%;
+    transform: scale(1.05);
+    transition: all 1.2s;
+}
+#tour .texto{
+    width: 100%;
+}
+#tour .imagen{
+    width: 65%;
+    position: relative;
+    top: -27px;
+}
+#tour h4{
+    color: black;
+    text-align: center;
+}
+.fechas {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    width: 85%;
+    margin: auto;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #cccccc57;
+}
+.fechas div {
+    margin-bottom: 10px;
+}
+.fechas .numero{
+    font-size: 34px;
+}
+.fechas h5, .fechas p{
+    margin:0;
+}
+.fechas h5{
+    font-size: 20px;
+}
+.fechas a{
+    background: white;
+    color: black;
+    padding: 15px 30px;
+}
+footer {
+    text-align: center;
+    padding: 60px 0;
+    background: white;
+}
+footer svg {
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    margin: 0 10px;
+}
+@media only screen and (min-width:320px) and (max-width:479px) {
+    header{
+        background-image:url(../imagenes/encabezado.jpg);
+        background-size: cover;
+        height:80vh
+    }
+    header .menu {
+        flex-direction: column; 
+    }
+    nav ul {
+        flex-direction: column; 
+    }
+    nav {
+        background: yellow !important;
+        width: 100%;
+        position: absolute;
+        top: 130px;
+        display: none;
+        left: 0;
+    }
+    nav ul li a {
+        color: black;
+        margin: bottom 10px;
+    }
+    nav ul li a:hover {
+        color: white;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    .boton {
+        margin-top: 220px;
+        display: none;
+    }
+    header .logo-y-menu {
+        justify-content: space-between; 
+    }
+    h1{
+        font-size: 32px;
+        padding-top: 20px;
+    }
+    header .titular{
+        margin-top: 19vh;
+    }
+    h2 {
+        font-size: 27px !important;
+    }
+    .scrollDown img{
+        margin-top: 10px;
+    }
+    #discografia .contenedor {
+        flex-direction: column; 
+    }
+    #discografia .texto {
+        width: 100%;
+    }
+    #discografia .foto{
+        width: 82%;
+        margin-top: 20px;
+        
+    }
+    .contenedor-textos {
+        flex-direction:column; 
+    }
+    header .boton a, .botones a, #discografia a {
+        background: yellow;
+        color: black;
+        padding: 14px 19px;
+        line-height: 50px;
+        font-size: 13px;
+    }
+    #tour .contenedor {
+        flex-direction: column;
+    }
+    #tour .imagen {
+        width: 65%;
+        position: relative;
+        top: -27px;
+    }
+    #tour .texto {
+        width: 100%;
+    }
+    .fechas {
+        flex-direction: column; 
+    }
+    .fechas div {
+        margin-bottom: 10px;
+    }
+    .galeria .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-image: url(../imagenes/57506266_681281678958174_8623268720635198201_n.jpg);
+        border-radius: 20px;
+        background-size:cover;
+        background-position:center;
+    }
+    .img2 {
+        grid-column: 2/3;
+        grid-row: 2/4;
+        background-image: url(../imagenes/138960207_807621563300711_2091813697995530178_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img3{
+        background-image: url(../imagenes/57593738_411382389438578_567392472254431326_n.jpg);
+        background-size: cover;
+        background-position:bottom;
+        border-radius: 20px;
+    }
+    .img4{
+        background-image: url(../imagenes/152397828_3713372548750134_1409808329901898728_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img5 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        background-image: url(../imagenes/xtour.jpg);
+        background-size: cover;
+        background-position:center;
+        border-radius: 20px;
+    }
+    .img6{
+        background-image: url(../imagenes/217175313_553997372402212_528623457652565791_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img7{
+        background-image: url(../imagenes/126385827_114867680440685_6589484813927382590_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img8 {
+        grid-column: 1/3;
+        background-image: url(../imagenes/xale_tocando.jpg);
+        background-size:cover;
+        background-position:center;
+        border-radius: 20px;
+    }
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+    header{
+        background-image:url(../imagenes/encabezado.jpg);
+        background-size: cover;
+        height:80vh
+    }
+    header .menu {
+        flex-direction: column; 
+    }
+    nav ul {
+        flex-direction: column; 
+    }
+    nav {
+        background: yellow;
+        width: 100%;
+        position: absolute;
+        top: 130px;
+        display: none;
+        left: 0;
+    }
+    nav ul li a {
+        color: black;
+        margin: bottom 10px;
+    }
+    nav ul li a:hover {
+        color: white;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    .boton {
+        margin-top: 220px;
+        display: none;
+    }
+    header .logo-y-menu {
+        justify-content: space-between; 
+    }
+    h1{
+        font-size: 32px;
+        padding-top: 20px;
+    }
+    header .titular{
+        margin-top: 19vh;
+    }
+    h2 {
+        font-size: 27px !important;
+    }
+    .scrollDown img{
+        margin-top: 0px;
+    }
+    #discografia .contenedor {
+        flex-direction: column;
+    }
+    #discografia .texto {
+        width: 100%;
+    }
+    #discografia .foto{
+        width: 82%;
+        margin-top: 20px;
+    }
+    .contenedor-textos {
+        flex-direction:column; 
+    }
+    header .boton a, .botones a, #discografia a {
+        background: yellow;
+        color: black;
+        padding: 14px 19px;
+        line-height: 50px;
+        font-size: 13px;
+    }
+    #tour .contenedor {
+        flex-direction: column;
+    }
+    #tour .imagen {
+        width: 65%;
+        position: relative;
+        top: -27px;
+    }
+    #tour .texto {
+        width: 100%;
+    }
+    .fechas {
+        flex-direction: column; 
+    }
+    .fechas div {
+        margin-bottom: 10px;
+    }
+    .galeria .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .img1{
+        background-image: url(../imagenes/57506266_681281678958174_8623268720635198201_n.jpg);
+        border-radius: 20px;
+        background-size:cover;
+        background-position:center;
+    }
+    .img2{
+        background-image: url(../imagenes/57593738_411382389438578_567392472254431326_n.jpg);
+        background-size: cover;
+        background-position:bottom;
+        border-radius: 20px;
+    }
+    .img3{
+        background-image: url(../imagenes/57593738_411382389438578_567392472254431326_n.jpg);
+        background-size: cover;
+        background-position:bottom;
+        border-radius: 20px;
+    }
+    .img4{
+        background-image: url(../imagenes/152397828_3713372548750134_1409808329901898728_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img5{
+        background-image: url(../imagenes/xtour.jpg);
+        background-size: cover;
+        background-position:center;
+        border-radius: 20px;
+    }
+    .img6{
+        background-image: url(../imagenes/217175313_553997372402212_528623457652565791_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img7{
+        background-image: url(../imagenes/126385827_114867680440685_6589484813927382590_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img8 {
+        grid-column: 2/4;
+        background-image: url(../imagenes/xale_tocando.jpg);
+        background-size:cover;
+        background-position:center;
+        border-radius: 20px;
+    }
+}
+@media only screen and (min-width:768px) {
+    body{
+        margin:0;
+        padding:0;
+        font-family: "krona one" ;
+    }
+    a{
+        text-decoration:none;
+    }
+    li{
+        list-style:none;
+    }
+    .contenedor{
+        width:100%;
+        max-width:1280px;
+        margin: auto;
+    }
+    header{
+        background-image:url(../imagenes/encabezado.jpg);
+        height:100vh;
+        background-size: cover;
+    }
+    header .menu{
+        display:flex;
+        justify-content:space-between; 
+        padding-top: 20px;
+        flex-direction:row;
+    }
+    .boton {
+        margin: 20px 20px;
+        display: flex;
+    }
+    .boton a{
+        padding: 5px 5px;
+        font-size: 20px;
+        margin: 20px 20px;
+    }
+    header .logo-y-menu {
+        display:flex; 
+        align-items:center;
+        flex-direction:row;
+    }
+    /*.menu-icon{
+        display: none;
+    }*/
+    nav {
+        background:unset;
+        width:unset;
+        position:unset;
+        /*top: 130px;*/
+        display: inline-block;
+        flex-direction: row;
+        /*left: 0;*/
+    }
+    nav ul{
+        display:flex;
+        flex-direction: row;
+    }
+    nav ul li{
+        margin:0 20px;
+    }
+    nav, ul, li a{
+        color:#fff;
+        font-size: 17px;
+    }
+    header .botones a, #discografia a{
+        background: yellow;
+        color:#000;
+        padding:20px 40px;
+        line-height: 100px;
+    }
+    header .titular{
+        margin-top:30vh;
+        color:#fff;
+    }
+    h1{
+        font-size:60px;
+        width: 80%;
+    }
+    .scrollDown img{
+        margin-top: -100px;
+    }
+    .blanco {
+        background: #fff !important;
+    }
+    #discografia {
+        background: #000;
+        color:#fff;
+        padding: 160px 20px;
+    }
+    h4{
+        margin: 0;
+        color: yellow;
+        border: 1px solid #ccc;
+        width: 120px;
+        padding: 10px;
+        border-radius:60px;
+    }
+    #discografia .contenedor{
+        display: flex; 
+        align-items:center;
+        flex-direction: row;
+        padding-top: 140px;
+    }
+    #discografia span{
+        color:yellow;
+        text-decoration: underline;
+    }
+    .titular span{
+        color:yellow;
+    }
+    #discografia h2{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    #discografia p{
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 40px;
+    }
+    #discografia img{
+        width: 100%;
+        padding:20px 80px;
+    }
+    #discografia .texto{
+        width: 50%;
+        margin-top: 40px;
+    }
+    #discografia .foto{
+        width:30%;
+    }
+    .contenedor-textos {
+        display: flex;
+        flex-direction: row;
+    }
+    #about h4, #events h4{
+        color: #000;
+        border: 1px solid black;
+        text-align: center;
+    }
+    #about p, #tour p, footer p, #events p{
+        font-family: "jost";
+    }
+    .negro{
+        background: #aaa !important;
+    }
+    #about, #events{
+        padding: 100px 20px;
+    }
+    #tour {
+        background: yellow;
+        padding: 60px 0;
+    }
+    #tour .contenedor{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    #tour img{
+        width: 100%;
+    }
+    #tour .texto{
+        width: 50%;
+    }
+    #tour .imagen{
+        width: 40%;
+        position: relative;
+        top: -110px;
+    }
+    #tour h4{
+        color: black;
+        text-align: center;
+    }
+    .fechas {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around; 
+        width: 85%;
+        margin: auto;
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+        border-bottom: 1px solid #cccccc57;
+    }
+    .fechas .numero{
+        font-size: 34px;
+    }
+    .fechas h5, .fechas p{
+        margin:0;
+    }
+    .fechas h5{
+        font-size: 20px;
+    }
+    .fechas a{
+        background: white;
+        color: black;
+        padding: 15px 30px;
+    }
+    footer {
+        text-align: center;
+        padding: 60px 0;
+    }
+    footer svg {
+        background: black;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        width: 15px !important;
+        height: 15px !important;
+        margin: 0 10px;
+    }
+    .galeria .contenedor{
+        width: 100%;
+        height: 600px;
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .galeria .img1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-image: url(../imagenes/57506266_681281678958174_8623268720635198201_n.jpg);
+        border-radius: 20px;
+        background-size:cover;
+        background-position:center;
+    }
+    .galeria .img2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url(../imagenes/138960207_807621563300711_2091813697995530178_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .galeria .img3 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+        background-image: url(../imagenes/57593738_411382389438578_567392472254431326_n.jpg);
+        background-size: cover;
+        background-position:bottom;
+        border-radius: 20px;
+    }
+    .galeria .img4 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url(../imagenes/152397828_3713372548750134_1409808329901898728_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .galeria .img5 {
+        grid-column: 2/3;
+        grid-row: 2/4;
+        background-image: url(../imagenes/xtour.jpg);
+        background-size: cover;
+        background-position:center;
+        border-radius: 20px;
+    }
+    .galeria .img6 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-image: url(../imagenes/217175313_553997372402212_528623457652565791_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .galeria .img7 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        background-image: url(../imagenes/126385827_114867680440685_6589484813927382590_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .galeria .img8 {
+        grid-column: 3/5;
+        grid-row: 3/4;
+        background-image: url(../imagenes/xale_tocando.jpg);
+        background-size:cover;
+        background-position:center;
+        border-radius: 20px;
+    }
+}
+.galeria{
+    height:800px;
+    width:100%;
+    background-color:white;
+}
+.galeria h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.galeria .contenedor{
+    width: 100%;
+    height: 600px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-gap: 20px;
+    box-sizing: border-box;
+}
+.img:hover {
+    transform: scale(1.05);
+    transition: all 1.2s;
+    filter: grayscale(1);
+}
+    .img1 {
+        background-image: url(../imagenes/57506266_681281678958174_8623268720635198201_n.jpg);
+        border-radius: 20px;
+        background-size:cover;
+        background-position:center;
+    }
+    .img2 {
+        background-image: url(../imagenes/138960207_807621563300711_2091813697995530178_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img3{
+        background-image: url(../imagenes/57593738_411382389438578_567392472254431326_n.jpg);
+        background-size: cover;
+        background-position:bottom;
+        border-radius: 20px;
+    }
+    .img4{
+        background-image: url(../imagenes/152397828_3713372548750134_1409808329901898728_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img5 {
+        background-image: url(../imagenes/xtour.jpg);
+        background-size: cover;
+        background-position:center;
+        border-radius: 20px;
+    }
+    .img6{
+        background-image: url(../imagenes/217175313_553997372402212_528623457652565791_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+    .img7{
+        background-image: url(../imagenes/126385827_114867680440685_6589484813927382590_n.jpg);
+        background-size: cover;
+        background-position:top;
+        border-radius: 20px;
+    }
+.img8 {
+    background-image: url(../imagenes/xale_tocando.jpg);
+    background-size:cover;
+    background-position:center;
+    border-radius: 20px;
+}
+#form .boton a{
+    background: yellow;
+    color: black;
+    padding: 14px 19px;
+    line-height: 50px;
+    font-size: 13px;
+}
+#form .contenedor{
+    display: flex; 
+    align-items:center; 
+    flex-direction: column;
+}
+#form .contenedor h2{
+    margin: 20px 10px;
+}
+/*PRUEBA HEADER DINAMICO*/
+.header2 {
+	position:relative;
+	height:200px;
+}
