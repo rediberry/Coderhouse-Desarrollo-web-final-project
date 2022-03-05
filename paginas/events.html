@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro María</title>
+    <title>Alejandro María DJ Producer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
-    <header>
+    <header class="header_pages">
         <div class="contenedor">
             <div class="menu">
                 <div class="logo-y-menu">
@@ -34,7 +35,6 @@
         </div>
     </header>
     <section class="galeria">
-        <h2>Gallery</h2>
         <div class="contenedor">
             <div class="img img1"></div>
             <div class="img img2"></div>
@@ -49,14 +49,31 @@
     <footer>
         <div class="contenedor">
             <div class="redes">
-                <a href="https://open.spotify.com/artist/5W0Agbc0JHIriXYN7Xq9gr?si=_zRhFvkySnG5nzvzlF4eVA" target="_blank"><i class="fab fa-spotify"></i></a> 
-                <a href="https://www.facebook.com/musicbyalejandromaria/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/musicbyalejandromaria" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/musicbyalejandromaria" data-toggle="tooltip" title="Instagram" target="_blank">
+                    <img class="footer__img-redes" src="../imagenes/instagram-svgrepo-com.svg" alt="Instagram Link">
+                </a>
+                <a href="https://open.spotify.com/artist/5W0Agbc0JHIriXYN7Xq9gr?si=_zRhFvkySnG5nzvzlF4eVA" data-toggle="tooltip" title="Spotify" target="_blank">
+                    <img class="footer__img-redes" src="../imagenes/spotify-svgrepo-com.svg" alt="Spotify Link">
+                </a> 
+                <a href="https://soundcloud.com/musicbyalejandromaria" data-toggle="tooltip" title="Soundcloud" target="_blank">
+                    <img class="footer__img-redes" src="../imagenes/soundcloud-svgrepo-com.svg" alt="Soundclud Link">
+                </a>
+                <a href="https://open.spotify.com/artist/5W0Agbc0JHIriXYN7Xq9gr?si=_zRhFvkySnG5nzvzlF4eVA" data-toggle="tooltip" title="Apple Music" target="_blank">
+                    <img class="footer__img-redes" src="../imagenes/apple-music-svgrepo-com.svg" alt="Apple Music Link">
+                </a> 
+                <a href="https://soundcloud.com/musicbyalejandromaria" data-toggle="tooltip" title="Beatport" target="_blank">
+                    <img class="footer__img-redes" src="../imagenes/beatport-svgrepo-com.svg" alt="Beatport Link">
+                </a>
+                <a href="https://www.instagram.com/musicbyalejandromaria" data-toggle="tooltip" title="Traxsource" target="_blank">
+                    <img class="footer__img-redes" src="../imagenes/traxsource-logo-only.png" alt="Traxsource Link">
+                </a>
             </div>
-            <h3>© 2022 - Music by Alejandro Maria</h3>
+            <h3>© 2022 Music by Alejandro Maria, All rights reserved.</h3>
             <p>Buenos Aires, Argentina</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
