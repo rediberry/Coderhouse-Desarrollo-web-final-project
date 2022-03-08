@@ -36,10 +36,13 @@
     </header>
     <section id="form">
         <div class="contenedor">
+            <h4>Contact me</h4>
             <h2>Want to say hello?</h2>
-            <p>If you'd like to work together on a project, please leave your info at the the project planner form below.</p>
-            <iframe height="1628" title="Embedded Wufoo Form" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none;color: #FFFF;" src="https://rediberry.wufoo.com/embed/z18rrlac183rwuj/"> <a href="https://rediberry.wufoo.com/forms/z18rrlac183rwuj/">Fill out my Wufoo form!</a> </iframe>
-            <!--<div id="wufoo-z18rrlac183rwuj"> Fill out my <a href="https://rediberry.wufoo.com/forms/z18rrlac183rwuj">online form</a>. </div> <script type="text/javascript"> var z18rrlac183rwuj; (function(d, t) { var s = d.createElement(t), options = { 'userName':'rediberry', 'formHash':'z18rrlac183rwuj', 'autoResize':true, 'height':'898', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z18rrlac183rwuj = new WufooForm(); z18rrlac183rwuj.initialize(options); z18rrlac183rwuj.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>-->
+            <p>If you'd like to work together on a project, please leave your info at the the project planner form below and I'll reply within 24 - 48 hours. I'm looking forward to chatting with you about your project.</p>
+            <div class="contenedor_iframe">
+                <div class="loader"></div>
+                <iframe height="900" title="Embedded Wufoo Form" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://rediberry.wufoo.com/embed/z18rrlac183rwuj/"> <a href="https://rediberry.wufoo.com/forms/z18rrlac183rwuj/">Fill out my Wufoo form!</a> </iframe>
+            </div>
         </div>
     </form>
     </section>
@@ -55,13 +58,13 @@
                 <a href="https://soundcloud.com/musicbyalejandromaria" data-toggle="tooltip" title="Soundcloud" target="_blank">
                     <img class="footer__img-redes" src="../imagenes/soundcloud-svgrepo-com.svg" alt="Soundclud Link">
                 </a>
-                <a href="https://open.spotify.com/artist/5W0Agbc0JHIriXYN7Xq9gr?si=_zRhFvkySnG5nzvzlF4eVA" data-toggle="tooltip" title="Apple Music" target="_blank">
+                <a href="https://music.apple.com/us/artist/alejandro-maria/1539175451" data-toggle="tooltip" title="Apple Music" target="_blank">
                     <img class="footer__img-redes" src="../imagenes/apple-music-svgrepo-com.svg" alt="Apple Music Link">
                 </a> 
-                <a href="https://soundcloud.com/musicbyalejandromaria" data-toggle="tooltip" title="Beatport" target="_blank">
+                <a href="https://www.beatport.com/artist/alejandro-maria/934964" data-toggle="tooltip" title="Beatport" target="_blank">
                     <img class="footer__img-redes" src="../imagenes/beatport-svgrepo-com.svg" alt="Beatport Link">
                 </a>
-                <a href="https://www.instagram.com/musicbyalejandromaria" data-toggle="tooltip" title="Traxsource" target="_blank">
+                <a href="https://www.traxsource.com/artist/583473/alejandro-maria" data-toggle="tooltip" title="Traxsource" target="_blank">
                     <img class="footer__img-redes" src="../imagenes/traxsource-logo-only.png" alt="Traxsource Link">
                 </a>
             </div>
@@ -72,6 +75,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
             $(".menu-icon").click(function(){
@@ -79,6 +83,11 @@
             })
         })
     </script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+        });
+        </script>
     <!-- <script>
         $(document).ready(function(){
             $(window).scroll(function(){

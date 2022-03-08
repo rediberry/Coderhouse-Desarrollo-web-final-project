@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
-    <header class="header_pages">
+    <!-- <header class="header_pages">
         <div class="contenedor">
             <div class="menu">
                 <div class="logo-y-menu">
@@ -33,8 +33,37 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+    <header id="header">
+        <div class="container">
+            <div id="logo" class="pull-left">
+                <h1><a href="../index.html" class="scrollto"></a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!--<a href="../index.html"><img src="../imagenes/logo.png" alt="alejandro maria" title="DJ/Producer" /></a>-->
+            </div>
+            <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="../index.html">Home</a></li>
+                <li><a href="./bio.html">Bio</a></li>
+                <li><a href="./music.html">Music</a></li>
+                <li><a href="./events.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
     <section class="galeria">
+        <div class="galeria_video">
+            <video poster="../imagenes/WhatsApp Image 2022-03-06 at 15.16.09.jpeg" width="320" height="240" controls>
+                <source src="../imagenes/dj_tocando_remix_ale.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="galeria_video_texto">
+            <h5>
+                Dj Juan Pryor playing "Deep Dish - Mohamad is Jesus (Alejandro Maria Re-Edit)" at Niceto Bar.
+            </h5>
+        </div>
         <div class="contenedor">
             <div class="img img1"></div>
             <div class="img img2"></div>
@@ -58,13 +87,13 @@
                 <a href="https://soundcloud.com/musicbyalejandromaria" data-toggle="tooltip" title="Soundcloud" target="_blank">
                     <img class="footer__img-redes" src="../imagenes/soundcloud-svgrepo-com.svg" alt="Soundclud Link">
                 </a>
-                <a href="https://open.spotify.com/artist/5W0Agbc0JHIriXYN7Xq9gr?si=_zRhFvkySnG5nzvzlF4eVA" data-toggle="tooltip" title="Apple Music" target="_blank">
+                <a href="https://music.apple.com/us/artist/alejandro-maria/1539175451" data-toggle="tooltip" title="Apple Music" target="_blank">
                     <img class="footer__img-redes" src="../imagenes/apple-music-svgrepo-com.svg" alt="Apple Music Link">
                 </a> 
-                <a href="https://soundcloud.com/musicbyalejandromaria" data-toggle="tooltip" title="Beatport" target="_blank">
+                <a href="https://www.beatport.com/artist/alejandro-maria/934964" data-toggle="tooltip" title="Beatport" target="_blank">
                     <img class="footer__img-redes" src="../imagenes/beatport-svgrepo-com.svg" alt="Beatport Link">
                 </a>
-                <a href="https://www.instagram.com/musicbyalejandromaria" data-toggle="tooltip" title="Traxsource" target="_blank">
+                <a href="https://www.traxsource.com/artist/583473/alejandro-maria" data-toggle="tooltip" title="Traxsource" target="_blank">
                     <img class="footer__img-redes" src="../imagenes/traxsource-logo-only.png" alt="Traxsource Link">
                 </a>
             </div>
@@ -76,22 +105,79 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function(){
-            $(".menu-icon").click(function(){
-                $("header nav").slideToggle()
-            })
-        })
-    </script>
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                if( $(this).scrollTop() > 0 ){
-                    $('header').addClass('header2');
-                } else {
-                    $('header').removeClass('header2');
-                }
-            });
-        });
-    </script>
+// Mobile Navigation
+if ($('#nav-menu-container').length) {
+    var $mobile_nav = $('#nav-menu-container').clone().prop({
+        id: 'mobile-nav'
+    });
+    $mobile_nav.find('> ul').attr({
+        'class': '',
+        'id': ''
+    });
+    $('body').append($mobile_nav);
+    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars" style="color:white"></i></button>');
+    $('body').append('<div id="mobile-body-overly"></div>');
+    $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
+
+    $(document).on('click', '.menu-has-children i', function(e) {
+        $(this).next().toggleClass('menu-item-active');
+        $(this).nextAll('ul').eq(0).slideToggle();
+        $(this).toggleClass("fa-chevron-up fa-chevron-down");
+    });
+
+    $(document).on('click', '#mobile-nav-toggle', function(e) {
+        $('body').toggleClass('mobile-nav-active');
+        $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+        $('#mobile-body-overly').toggle();
+    });
+
+    $(document).click(function(e) {
+        var container = $("#mobile-nav, #mobile-nav-toggle");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if ($('body').hasClass('mobile-nav-active')) {
+            $('body').removeClass('mobile-nav-active');
+            $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+            $('#mobile-body-overly').fadeOut();
+        }
+        }
+    });
+    } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
+        $("#mobile-nav, #mobile-nav-toggle").hide();
+    }
+
+// Smooth scroll for the menu and links with .scrollto classes
+$('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        if (target.length) {
+        var top_space = 0;
+
+        if ($('#header').length) {
+            top_space = $('#header').outerHeight();
+
+            if( ! $('#header').hasClass('header-fixed') ) {
+            top_space = top_space - 20;
+            }
+        }
+
+        $('html, body').animate({
+            scrollTop: target.offset().top - top_space
+        }, 1500, 'easeInOutExpo');
+
+        if ($(this).parents('.nav-menu').length) {
+            $('.nav-menu .menu-active').removeClass('menu-active');
+            $(this).closest('li').addClass('menu-active');
+        }
+
+        if ($('body').hasClass('mobile-nav-active')) {
+            $('body').removeClass('mobile-nav-active');
+            $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+            $('#mobile-body-overly').fadeOut();
+        }
+        return false;
+        }
+    }
+});
+</script>
 </body>
 </html>
