@@ -871,6 +871,7 @@
 }
 
 * body #music .contenedor .card-deck .card {
+  width: 100% !important;
   margin-top: 30px;
 }
 
@@ -878,7 +879,7 @@
   padding: 7px 10px;
   color: #e6e4e4;
   text-align: center;
-  font-size: 0.7vmax;
+  font-size: medium;
   background: #000000;
   background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(52%, #262626), to(#000000));
   background: linear-gradient(to right, #000000 0%, #262626 52%, #000000 100%);
@@ -902,9 +903,12 @@
 * body #music .contenedor .card-deck .card .card-footer .redes a img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  width: 1vmax;
-  height: 1vmax;
-  margin: 5px 5px;
+  margin: 3.2px 3.2px;
+}
+
+* body #music .contenedor .card-deck .card .card-footer .redes a .footer__img-redes {
+  width: 2vmax !important;
+  height: 2vmax !important;
 }
 
 * body #music .contenedor .card-deck .card .card-footer .redes a:hover img {
@@ -1228,6 +1232,9 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+  body #music .contenedor .card-deck .card .card-header {
+    font-size: 0.9vmax !important;
+  }
   body #bio .contenedor {
     padding: 60px 240px;
   }
@@ -1455,8 +1462,8 @@
   body #form .contenedor .contenedor_iframe iframe {
     height: 1000px;
   }
-  body #music .contenedor {
-    padding: 160px 25px;
+  body #music .contenedor .card-deck .card .card-header {
+    font-size: 0.9vmax !important;
   }
   body .galeria {
     height: 1200px;
@@ -1624,7 +1631,13 @@
     padding-right: 20px;
   }
   body #music .contenedor .card-deck .card {
-    width: 280px !important;
+    width: 100% !important;
+  }
+  body #music .contenedor .card-deck .card .card-header {
+    font-size: medium;
+  }
+  body #music .contenedor .card-deck .card .card-footer .redes img {
+    margin: 5px 5px;
   }
   body .galeria {
     height: 1200px;

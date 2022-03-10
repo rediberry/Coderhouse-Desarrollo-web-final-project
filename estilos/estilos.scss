@@ -679,12 +679,14 @@
                         box-shadow: 0px 0px 15px 2px #FFFF;
                     }
                     .card{
+                        width:100% !important;
                         margin-top: 30px;
                         .card-header{
                             padding:7px 10px;
                             color:#e6e4e4;
                             text-align: center;
-                            font-size: 0.7vmax;
+                            font-size: medium;
+                            //font-size: 0.9vmax;
                             background: #000000;
                             background: -moz-linear-gradient(left, #000000 0%, #262626 52%, #000000 100%);
                             background: -webkit-linear-gradient(left, #000000 0%, #262626 52%, #000000 100%);
@@ -702,9 +704,11 @@
                                     text-decoration: none;
                                     img{
                                         filter: grayscale(100%);
-                                        width: 1vmax;
-                                        height: 1vmax;
-                                        margin: 5px 5px;
+                                        margin: 3.2px 3.2px;
+                                    }
+                                    .footer__img-redes{
+                                        width:2vmax !important;
+                                        height:2vmax !important;
                                     }
                                 }
                                 a:hover{
@@ -1008,6 +1012,13 @@
             .contenedor{
                 padding-left: 100px;
                 padding-right: 100px;
+                .card-deck{
+                    .card{
+                        .card-header{
+                            font-size: 0.9vmax !important;
+                        }
+                    }
+                }
             }
         }
         #bio{
@@ -1215,7 +1226,13 @@
         }
         #music{
             .contenedor{
-                padding:160px 25px;
+                .card-deck{
+                    .card{
+                        .card-header{
+                            font-size: 0.9vmax !important;
+                        }
+                    }
+                }
             }
         }
         .galeria{
@@ -1387,7 +1404,17 @@
                 padding-right:20px;
                 .card-deck{
                     .card{
-                        width:280px !important;
+                        width:100% !important;
+                        .card-header{
+                            font-size:medium;
+                        }
+                        .card-footer{
+                            .redes{
+                                img{
+                                    margin: 5px 5px;
+                                }
+                            }
+                        }
                     }
                 }
             }
