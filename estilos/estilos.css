@@ -832,7 +832,10 @@
   background: #000000;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(20%, #121212), to(#FFFFFF));
   background: linear-gradient(to bottom, #000000 0%, #121212 20%, #FFFFFF 100%);
-  padding: 20px 20px;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 
 * body #music .contenedor h4 {
@@ -844,6 +847,9 @@
   padding: 10px;
   border-radius: 20px;
   font-size: 13px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * body #music .contenedor h2 {
@@ -852,45 +858,37 @@
   padding-top: 20px;
 }
 
+* body #music .contenedor .card-deck {
+  text-align: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+* body #music .contenedor .card-deck .card:hover {
+  -webkit-box-shadow: 0px 0px 15px 2px #FFFF;
+  box-shadow: 0px 0px 15px 2px #FFFF;
+}
+
+* body #music .contenedor .card-deck .card {
+  margin-top: 30px;
+}
+
 * body #music .contenedor .card-deck .card .card-header {
+  padding: 7px 10px;
+  color: #e6e4e4;
   text-align: center;
-  font-size: 15px;
-  background: #EA90FF;
-  background: -webkit-gradient(linear, left top, right top, from(#EA90FF), color-stop(50%, #FFFFFF), to(#F0FF87));
-  background: linear-gradient(to right, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
-}
-
-* body #music .contenedor .card-deck .card .card-body h4 {
-  font-size: 10px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-* body #music .contenedor .card-deck .card .card-body .redes {
-  text-align: center;
-}
-
-* body #music .contenedor .card-deck .card .card-body .redes a {
-  text-decoration: none;
-}
-
-* body #music .contenedor .card-deck .card .card-body .redes a img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  width: 20px !important;
-  height: 20px !important;
-  margin: 10px 10px;
-}
-
-* body #music .contenedor .card-deck .card .card-body .redes a:hover img {
-  -webkit-filter: none;
-          filter: none;
+  font-size: 0.7vmax;
+  background: #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(52%, #262626), to(#000000));
+  background: linear-gradient(to right, #000000 0%, #262626 52%, #000000 100%);
 }
 
 * body #music .contenedor .card-deck .card .card-footer {
-  background: #EA90FF;
-  background: -webkit-gradient(linear, left top, right top, from(#EA90FF), color-stop(50%, #FFFFFF), to(#F0FF87));
-  background: linear-gradient(to right, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
+  background: #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(52%, #262626), to(#000000));
+  background: linear-gradient(to right, #000000 0%, #262626 52%, #000000 100%);
+  padding: 7px 10px;
 }
 
 * body #music .contenedor .card-deck .card .card-footer .redes {
@@ -904,9 +902,9 @@
 * body #music .contenedor .card-deck .card .card-footer .redes a img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  width: 20px !important;
-  height: 20px !important;
-  margin: 10px 10px;
+  width: 1vmax;
+  height: 1vmax;
+  margin: 5px 5px;
 }
 
 * body #music .contenedor .card-deck .card .card-footer .redes a:hover img {
@@ -1227,21 +1225,8 @@
     padding: 15px 30px;
   }
   body #music .contenedor {
-    padding: 60px 240px;
-  }
-  body #music .contenedor .card-deck .card {
-    margin-top: 30px;
-  }
-  body #music .contenedor .card-deck .card .card-body h4 {
-    color: #121212;
-    font-size: 10px;
-  }
-  body #music .contenedor .card-deck .card:hover {
-    -webkit-box-shadow: 0px 0px 15px 2px #FFFF;
-    box-shadow: 0px 0px 15px 2px #FFFF;
-  }
-  body #music .contenedor .card-deck .card:hover .card-body {
-    background-color: #e6e4e4;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   body #bio .contenedor {
     padding: 60px 240px;
@@ -1470,6 +1455,9 @@
   body #form .contenedor .contenedor_iframe iframe {
     height: 1000px;
   }
+  body #music .contenedor {
+    padding: 160px 25px;
+  }
   body .galeria {
     height: 1200px;
   }
@@ -1630,6 +1618,13 @@
   }
   body #form .contenedor .contenedor_iframe iframe {
     height: 1050px;
+  }
+  body #music .contenedor {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body #music .contenedor .card-deck .card {
+    width: 280px !important;
   }
   body .galeria {
     height: 1200px;

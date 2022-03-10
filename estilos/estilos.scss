@@ -651,7 +651,10 @@
                 background: -moz-linear-gradient(top, #000000 0%, #121212 20%, #FFFFFF 100%);
                 background: -webkit-linear-gradient(top, #000000 0%, #121212 20%, #FFFFFF 100%);
                 background: linear-gradient(to bottom, #000000 0%, #121212 20%, #FFFFFF 100%);
-                padding:20px 20px;
+                padding-top:160px;
+                padding-bottom:40px;
+                padding-right:3px;
+                padding-left:3px;
                 h4{
                     color:#e6e4e4;
                     border: 2px solid #E0FF00;
@@ -661,6 +664,7 @@
                     padding: 10px;
                     border-radius:20px;
                     font-size: 13px;
+                    justify-content: center;
                 }
                 h2{
                     color: #e6e4e4;
@@ -668,52 +672,39 @@
                     padding-top: 20px;
                 }
                 .card-deck{
+                    text-align: center !important;
+                    align-items: center !important;
+                    .card:hover{
+                        -webkit-box-shadow: 0px 0px 15px 2px #FFFF;
+                        box-shadow: 0px 0px 15px 2px #FFFF;
+                    }
                     .card{
+                        margin-top: 30px;
                         .card-header{
+                            padding:7px 10px;
+                            color:#e6e4e4;
                             text-align: center;
-                            font-size: 15px;
-                            background: #EA90FF;
-                            background: -moz-linear-gradient(left, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
-                            background: -webkit-linear-gradient(left, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
-                            background: linear-gradient(to right, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
-                        }
-                        .card-body{
-                            h4{
-                                font-size: 10px;
-                                box-sizing: content-box;
-                            }
-                            .redes{
-                                text-align: center;
-                                a{
-                                    text-decoration: none;
-                                    img{
-                                        filter: grayscale(100%);
-                                        width: 20px !important;
-                                        height: 20px !important;
-                                        margin: 10px 10px;
-                                    }
-                                }
-                                a:hover{
-                                    img{
-                                        filter:none;
-                                    }
-                                }
-                            }
+                            font-size: 0.7vmax;
+                            background: #000000;
+                            background: -moz-linear-gradient(left, #000000 0%, #262626 52%, #000000 100%);
+                            background: -webkit-linear-gradient(left, #000000 0%, #262626 52%, #000000 100%);
+                            background: linear-gradient(to right, #000000 0%, #262626 52%, #000000 100%);
                         }
                         .card-footer{
-                            background: #EA90FF;
-                            background: -moz-linear-gradient(left, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
-                            background: -webkit-linear-gradient(left, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
-                            background: linear-gradient(to right, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
+                            background: #000000;
+                            background: -moz-linear-gradient(left, #000000 0%, #262626 52%, #000000 100%);
+                            background: -webkit-linear-gradient(left, #000000 0%, #262626 52%, #000000 100%);
+                            background: linear-gradient(to right, #000000 0%, #262626 52%, #000000 100%);
+                            padding:7px 10px;
                             .redes{
                                 text-align: center;
                                 a{
                                     text-decoration: none;
                                     img{
                                         filter: grayscale(100%);
-                                        width: 20px !important;
-                                        height: 20px !important;
-                                        margin: 10px 10px;
+                                        width: 1vmax;
+                                        height: 1vmax;
+                                        margin: 5px 5px;
                                     }
                                 }
                                 a:hover{
@@ -1015,25 +1006,8 @@
         }
         #music{
             .contenedor{
-                padding: 60px 240px;
-                .card-deck{
-                    .card{
-                        margin-top: 30px;
-                        .card-body{
-                            h4{
-                                color: #121212;
-                                font-size: 10px;
-                            }
-                        }
-                    }
-                    .card:hover{
-                        .card-body{
-                            background-color: #e6e4e4;
-                        }
-                        -webkit-box-shadow: 0px 0px 15px 2px #FFFF;
-                        box-shadow: 0px 0px 15px 2px #FFFF;
-                    }
-                }
+                padding-left: 100px;
+                padding-right: 100px;
             }
         }
         #bio{
@@ -1239,6 +1213,11 @@
                 }
             }
         }
+        #music{
+            .contenedor{
+                padding:160px 25px;
+            }
+        }
         .galeria{
             height:1200px;
             .galeria_video{
@@ -1398,6 +1377,17 @@
                 .contenedor_iframe{
                     iframe{
                         height: 1050px;;
+                    }
+                }
+            }
+        }
+        #music{
+            .contenedor{
+                padding-left:20px;
+                padding-right:20px;
+                .card-deck{
+                    .card{
+                        width:280px !important;
                     }
                 }
             }
@@ -1666,3 +1656,4 @@ body.mobile-nav-active #mobile-nav {
     display: inline;
 }
 }
+
