@@ -29,14 +29,14 @@
             }
             .contenedor{
                 background-image:url(../imagenes/encabezado2.jpg);
-                //filter: blur(5px);
-                //-webkit-filter:blur(5px);
                 background-size: cover;
-                //height:80vh;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
                 width:100%;
                 height: 100%;
-                //max-width:1280px;
                 margin:auto;
+                padding:5% 5%;
                 .menu{
                     display: flex;
                     flex-direction: column; 
@@ -98,13 +98,13 @@
                         padding-top: 20px;
                         span{
                             color: transparent !important;
-                            background-image: linear-gradient(322deg, #e0ff00, #ffffff);
+                            background-image: linear-gradient(322deg, white, #e0ff00, white);
                             background-size: 400% 400%;
                             -webkit-background-clip: text;
                             background-clip: text;
-                            -webkit-animation: AnimationGradient 3s ease infinite;
-                            -moz-animation: AnimationGradient 3s ease infinite;
-                            animation: AnimationGradient 3s ease infinite;
+                            -webkit-animation: AnimationGradient 3s ease infinite ;
+                            -moz-animation: AnimationGradient 3s ease infinite ;
+                            animation: AnimationGradient 3s ease infinite ;
                         }
                     }
                     H1:hover{
@@ -136,63 +136,13 @@
                                 transform: scale(1.10);
                                 transition: all 0.5s;
                             }
-                        }
-                    }
-                }
-            }
-            .contenedor_pages{
-                background:#000;
-                margin:auto;
-                .menu{
-                    display: flex;
-                    flex-direction: column; 
-                    .logo-y-menu {
-                        justify-content: space-between;
-                        display:flex; 
-                        align-items:center;
-                        flex-direction: column;
-                        a{
-                            text-decoration:none;
-                        }
-                        nav {
-                            background:#E0FF00;
-                            width: 100%;
-                            position: absolute;
-                            top: 130px;
-                            display: none;
-                            left: 0;
-                            color: black;
-                            font-size: 12px;
-                            margin: bottom 10px;
-                            ul{
-                                display:flex;
-                                flex-direction: column;
-                                li{
-                                    margin-bottom: 10px;
-                                    margin-top: 10px;
-                                    li{
-                                        list-style:none;
-                                    }                            
-                                    a:hover {
-                                        color: white;
-                                    }
-                                }
+                            a{
+                                background: #e1ff0000;
+                                color: black;
+                                padding: 14px 19px;
+                                line-height: 50px;
+                                font-size: 13px;
                             }
-                        }
-                    }
-                    .boton{
-                        a{
-                            background: #E0FF00;
-                            color: black;
-                            padding: 14px 19px;
-                            line-height: 50px;
-                            font-size: 13px;
-                        }
-                        margin-top: 220px;
-                        display: none;
-                        .boton:hover {
-                            transition: all 1.2s;
-                            filter:grayscale(1);
                         }
                     }
                 }
@@ -201,15 +151,17 @@
         #discografia {
             background: #000;
             color:#fff;
-            //padding: 120px 0;
             .contenedor{
+                padding-right:3px;
+                padding-left:3px;
                 display: flex; 
                 align-items:center; 
                 flex-direction: column; 
                 .texto{
-                    padding-right: 20px;
+                    padding: 5% 5%;
                     h2 {
                         font-size: 27px;
+                        padding-top: 10px;
                         span{
                             text-decoration: underline;
                             color: transparent !important;
@@ -229,6 +181,8 @@
                         width: 120px;
                         padding: 10px;
                         border-radius:20px;
+                        font-size: small;
+                        text-align: center;
                     }
                     a{
                         background: #E0FF00;
@@ -237,55 +191,46 @@
                         line-height: 50px;
                         font-size: 13px;
                     }
+                    a:hover{
+                        background-color: yellow;
+                    }
                 }
                 .card-deck{
+                    text-align: center !important;
+                    align-items: center !important;
+                    padding: 5% 5%;
+                    .card:hover{
+                        -webkit-box-shadow: 0px 0px 15px 2px #FFFF;
+                        box-shadow: 0px 0px 15px 2px #FFFF;
+                    }
                     .card{
+                        width:100% !important;
                         .card-header{
+                            color: #121212;
                             text-align: center;
-                            font-size: 15px;
+                            font-size: medium;
                             background: #EA90FF;
                             background: -moz-linear-gradient(left, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
                             background: -webkit-linear-gradient(left, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
                             background: linear-gradient(to right, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
-                        }
-                        .card-body{
-                            h4{
-                                color: #121212;
-                                font-size: 10px;
-                                box-sizing: content-box;
-                            }
-                            .redes{
-                                text-align: center;
-                                a{
-                                    text-decoration: none;
-                                    img{
-                                        filter: grayscale(100%);
-                                        width: 20px !important;
-                                        height: 20px !important;
-                                        margin: 10px 10px;
-                                    }
-                                }
-                                a:hover{
-                                    img{
-                                        filter:none;
-                                    }
-                                }
-                            }
                         }
                         .card-footer{
                             background: #EA90FF;
                             background: -moz-linear-gradient(left, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
                             background: -webkit-linear-gradient(left, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
                             background: linear-gradient(to right, #EA90FF 0%, #FFFFFF 50%, #F0FF87 100%);
+                            padding:7px 10px;
                             .redes{
                                 text-align: center;
                                 a{
                                     text-decoration: none;
                                     img{
                                         filter: grayscale(100%);
-                                        width: 20px !important;
-                                        height: 20px !important;
-                                        margin: 10px 10px;
+                                        margin: 3.2px 3.2px;
+                                    }
+                                    .footer__img-redes{
+                                        width:2vmax !important;
+                                        height:2vmax !important;
                                     }
                                 }
                                 a:hover{
@@ -296,19 +241,12 @@
                             }
                         }
                     }
-                    .card:hover{
-                        .card-body{
-                            background-color: #e6e4e4;
-                        }
-                        -webkit-box-shadow: 0px 0px 15px 2px #FFFF;
-                        box-shadow: 0px 0px 15px 2px #FFFF;
-                    }
                 }
             }
         }
         #about {
             .contenedor{
-                padding: 100px 20px;
+                padding: 10% 7%;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
@@ -316,10 +254,12 @@
                     color: #000;
                     border: 2px solid #E0FF00;
                     text-align: center;
-                    margin: 0;
+                    margin-bottom: 10px;
                     width: 120px;
                     padding: 10px;
                     border-radius:20px;
+                    font-size: small;
+                    text-align: center;
                 }
                 .contenedor-textos{
                     .texto-izquierda{
@@ -358,14 +298,15 @@
             background: #E0FF00;
             padding: 1px 0px;
             .contenedor{
-                padding: 60px 20px;
+                padding: 20px 20px;
                 display: flex;
                 justify-content: space-around;
                 flex-direction: column;
+                align-items: center;
                 .imagen{
                     width: 65%;
                     position: relative;
-                    top: -27px;
+                    top: -35px;
                     img{
                         width: 100%;
                     }
@@ -377,14 +318,18 @@
                 }
                 .texto{
                     width: 100%;
+                    align-items: center;
                     h4{
                         color: #000;
                         border: 2px solid #121212;
                         text-align: center;
-                        margin: 0;
                         width: 120px;
-                        padding: 10px;
+                        padding: 5px;
                         border-radius:20px;
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        font-size: small;
+                        text-align: center;
                     }
                     h2{
                         font-size: 27px;
@@ -392,12 +337,14 @@
                 }
             }
             .fechas{
+                align-items: center;
+                text-align: center;
                 display: flex; 
                 flex-direction: column; 
                 justify-content: space-around; 
                 width: 85%;
                 margin: auto;
-                //padding-bottom: 30px;
+                padding-bottom: 5px;
                 margin-bottom: 60px;
                 border-bottom: 1px solid #A8A8A8;
                 .numero{
@@ -568,7 +515,10 @@
                 background: -moz-linear-gradient(top, #000000 0%, #121212 20%, #FFFFFF 100%);
                 background: -webkit-linear-gradient(top, #000000 0%, #121212 20%, #FFFFFF 100%);
                 background: linear-gradient(to bottom, #000000 0%, #121212 20%, #FFFFFF 100%);
-                padding: 30px 20px;
+                padding-bottom: 20px;
+                padding-top:160px;
+                padding-left:20px;
+                padding-right: 20px;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
@@ -588,14 +538,15 @@
                     padding-top: 20px;
                 }
                 p{
-                    color: #e6e4e4;
+                    color: #FFFFFF;
                 }
                 .texto-bio{
-                    display:inline-flex;
+                    //display:inline-flex;
                     .bloque_parrafo_bio{
-                        width:50%;
-                        float: left;
-                        padding-left:20px;
+                        width:auto;
+                        float:none;
+                        padding-left: 10%;
+                        padding-right: 10%;
                         padding-top:20px;
                         padding-bottom: 20px;
                         .botones{
@@ -610,11 +561,15 @@
                                 background: yellow;
                             }
                         }
+                        span{
+                            color:#121212;
+                        }
                     }
                     .contenedor_foto_perfil{
-                        width:50%;
-                        float: left;
-                        padding-right:20px;
+                        width:auto;
+                        float: none;
+                        padding-left: 10%;
+                        padding-right: 10%;
                         padding-top:20px;
                         padding-bottom: 20px;
                         .foto_perfil{
@@ -626,23 +581,30 @@
                         }
                         .links_redes{
                             text-align: center;
-                            padding-top:20px;
+                            padding:7px 0px;
                             a{
                                 padding-top:10px;
                                 text-decoration: none;
                                 img{
-                                    width: 30px !important;
-                                    height: 30px !important;
-                                    margin: 0px 10px;
+                                    width:1.5vmax !important;
+                                    height:1.5vmax !important;
+                                    margin: 15px 6px;
                                 }
                             }
                         }
                     }
                 }
-                .carousel-inner img {
-                    width: 100%;
-                    height: 100%;
-                    }
+            }
+            .contenedor_carousel{
+                padding-left: 20%;
+                padding-right: 20%;
+                padding-bottom: 40px;
+                .carousel.slide{
+                    .carousel-inner img {
+                        width: 100%;
+                        height: 100%;
+                        }
+                }
             }
         }
         #music{
@@ -739,7 +701,7 @@
                         img{
                             width: 20px !important;
                             height: 20px !important;
-                            margin: 10px 10px;
+                            margin: 10px 7px;
                         }
                     }
                 }
@@ -762,9 +724,7 @@
             height:95vh;
             .contenedor{
                 min-height: 500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
+                padding:0% 0%;
                 .menu{
                     justify-content:space-between; 
                     padding-top: 20px;
@@ -819,7 +779,7 @@
                 }
                 .titular{
                     align-items: flex-end;
-                    padding: 20px 240px;
+                    padding: 20px 120px;
                     h1{
                         font-size: 50px;
                         width:100%;
@@ -839,85 +799,20 @@
                 }
             }
         }
-        .header_pages{
-            height:unset;
-            .contenedor{
-                background:black;
-                min-height: unset;
-                .menu{
-                    justify-content:space-between; 
-                    padding-top: 20px;
-                    flex-direction:row;
-                    border-bottom: 1px groove #a8a8a8;
-                    .logo-y-menu {
-                        flex-direction: row;
-                        .menu-icon{
-                            display: none;
-                        }
-                        nav{
-                        background:unset;
-                        width:unset;
-                        position:unset;
-                        display: inline-block;
-                        flex-direction: row;
-                        color:#fff;
-                        font-size: 15px;
-                        ul{
-                            flex-direction: row;
-                            color:#fff;
-                            font-size: 15px;
-                            li{
-                                margin:0 20px;
-                                a{
-                                    color:#E0FF00;
-                                    font-size: 15px;
-                                }
-                                a:hover{
-                                    color:yellow;
-                                    text-decoration: underline;
-                                }      
-                            }
-                        }
-                        }
-                    }
-                }
-                .boton{
-                    -webkit-box-shadow: 0px 0px 15px 2px #E0FF00; 
-                    box-shadow: 0px 0px 15px 2px #E0FF00;
-                    a{
-                        padding:20px 40px;
-                        font-size: 13px;
-                    }
-                    margin: 20px 20px;
-                    display: flex;
-                }
-                .boton:hover{
-                    a{
-                        background: yellow;
-                    }
-                }
-            }
-        }
         #discografia {
-            //padding: 40px 40px;
             p{
                 font-size: 14px;
                 line-height: 27px;
                 margin-bottom: 40px;
             }
             .contenedor{
-                padding: 80px 240px;
+                padding: 20px 120px;
                 flex-direction: row;
                 justify-content: space-between;
-                //padding-top: 140px;
-                // .foto{
-                //     width:30%;
-                // }
                 .texto{
                     width: 50%;
-                    //margin-top: 40px;
                     h2 {
-                        font-size: 50px;
+                        font-size: 40px;
                         margin-bottom: 10px;
                     }
                     h4{
@@ -930,9 +825,6 @@
                         padding:20px 40px;
                         line-height: 100px;
                     }
-                    a:hover{
-                        background-color: yellow;
-                    }
                 }
                 .card-deck{
                     margin-right: 40px;
@@ -942,7 +834,10 @@
         }
         #about {
             .contenedor{
-                padding: 80px 240px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                padding-left: 12%;
+                padding-right:12%;
                 h4{
                     border-radius:60px;
                     font-size: 13px;
@@ -976,14 +871,14 @@
         }
         #tour {
             .contenedor{
-                padding-left: 240px;
-                padding-right: 240px;
-                padding-top: 80px;
+                padding-left: 120px;
+                padding-right: 120px;
+                padding-top: 20px;
                 padding-bottom: 0px;
                 flex-direction: row;
                 .imagen{
                     width: 30%;
-                    top: -130px;
+                    top: -80px;
                 }
                 .texto{
                     width: 55%;
@@ -996,7 +891,7 @@
                 }
             }
             .fechas{
-                padding: 0px 240px;
+                padding: 0px 40px;
                 flex-direction: row; 
                 .boton{
                     margin-bottom: 5px;
@@ -1023,9 +918,41 @@
         }
         #bio{
             .contenedor{
-                padding: 60px 240px;
-                .carousel-inner{
-                    padding-top: 40px;
+                padding-left: 130px;
+                padding-right: 130px;
+                .texto-bio{
+                    .bloque_parrafo_bio{
+                        padding-right: 0px;;
+                        width:50%;
+                        float: left;
+                        padding-left:40px;
+                        padding-top:20px;
+                        padding-bottom: 20px;
+                    }
+                    .contenedor_foto_perfil{
+                        padding-left: 0px;
+                        width:50%;
+                        float: left;
+                        padding-right:0px;
+                        padding-top:20px;
+                        padding-bottom: 20px;
+                        .foto_perfil{
+                            width:100%;
+                            img{
+                                width:100%;
+                                height:100%;
+                            }
+                        }
+                        .links_redes{
+                            a{
+                                img{
+                                    width:2vmax !important;
+                                    height:2vmax !important;
+                                    margin: 15px 10.5px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1078,139 +1005,67 @@
 }
 @media only screen and (min-width:480px) and (max-width:767px) {
     body{
-        a{
-            text-decoration:none;
-        }
-        li{
-            list-style: none;
-        }
-        h2 {
-            font-size: 27px !important;
-        }
         header{
-            .boton{
-                a{
-                    background:#E0FF00;
-                    color: black;
-                    padding: 14px 19px;
-                    line-height: 50px;
-                    font-size: 13px;
-                }
-            }
-            .botones{
-                a{
-                    background:#E0FF00;
-                    color: black;
-                    padding: 14px 19px;
-                    line-height: 50px;
-                    font-size: 13px;
-                }
-            }
             .contenedor{
-                .menu{
-                    flex-direction: column;
-                    .logo-y-menu {
-                        justify-content: space-between;
-                        .menu-icon{
-                            display: none;
-                        }
-                        nav {
-                            background:#E0FF00;
-                            width: 100%;
-                            position: absolute;
-                            top: 130px;
-                            display: none;
-                            left: 0;
-                            ul{
-                                flex-direction: column; 
-                                li{
-                                    margin-bottom: 10px;
-                                    a{
-                                        color: black;
-                                        margin: bottom 10px;
-                                    }
-                                    a:hover{
-                                        color: white;
-                                    }                    
-                                }
-                            }
-                        }
-                    }
-                    .boton{
-                        margin-top: 220px;
-                        display: none;
-                    }
-                }
                 .titular{
-                    margin-top: 19vh;
                     h1{
-                        font-size: 32px;
-                        padding-top: 20px;
+                        padding-top: 75px;
                     }
                     .botones{
                         a{
                             padding:20px 40px;
                             line-height: 100px;
                         }
-                        .scrollDown{
-                            img{
-                                margin-top: 0px;
-                            }
-                        }
                     }
                 }
             }
         }            
         #discografia {
-            a{
-                background: #E0FF00;
-                color: black;
-                padding: 14px 19px;
-                line-height: 50px;
-                font-size: 13px;
-            }
             .contenedor{
-                flex-direction: column;
-                .foto{
-                    width: 82%;
-                    margin-top: 20px;
-                }
                 .texto{
                     width: 100%;
-                }
-            }
-        }
-        #about {
-            .contenedor{
-                .contenedor-textos{
-                    flex-direction:column;
                 }
             }
         }
         #tour {
-            padding: 60px 0;
             .contenedor{
-                flex-direction: column;
                 .imagen{
-                    width: 65%;
-                    position: relative;
-                    top: -27px;
+                    top: -55px;
+                    width: 50%;
                 }
                 .texto{
-                    width: 100%;
+                    padding-left:5%;
+                    padding-right:5%;
                 }
             }
-            .fechas{
-                flex-direction: column;
-                div{
-                    margin-bottom: 10px;
-                }
-                .boton{
-                    margin-bottom: 10px;
-                    a{
-                        background: white;
-                        color: black;
-                        padding: 15px 30px;
+        }
+        #bio{
+            .contenedor{
+                padding-left: 60px;
+                padding-right: 60px;
+                .texto-bio{
+                    .bloque_parrafo_bio{
+                        width: auto;
+                        float: none;
+                        p{
+                            color:#121212;
+                        }
+                    }
+                    .contenedor_foto_perfil{
+                        width: auto;
+                        float: none;
+                        .foto_perfil{
+                            size: 70%;
+                        }
+                        .links_redes{
+                            a{
+                                img{
+                                    width:2.5vmax !important;
+                                    height:2.5vmax !important;
+                                    margin: 15px 10.5px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1255,135 +1110,53 @@
 }
 @media only screen and (min-width:320px) and (max-width:479px) {
     body{
-        a{
-            text-decoration:none;
-        }
-        li{
-            list-style: none;
-        }
-        h2 {
-            font-size: 27px !important;
-        }
         header{
-            .boton{
-                a{
-                    display: none;
-                }
-            }
-            .botones{
-                a{
-                    background: #E0FF00;
-                    color: black;
-                    padding: 14px 19px;
-                    line-height: 50px;
-                    font-size: 13px;
-                }
-            }
             .contenedor{
-                .menu{
-                    flex-direction: column; 
-                    .logo-y-menu {
-                        justify-content: space-between;
-                        .menu-icon{
-                            display: none;
-                        }
-                        nav {
-                            background:#E0FF00;
-                            width: 100%;
-                            position: absolute;
-                            top: 130px;
-                            display: none;
-                            left: 0;
-                            ul{
-                                flex-direction: column; 
-                                li{
-                                    margin-bottom: 10px;
-                                    a{
-                                        color: black;
-                                        margin: bottom 10px;
-                                    }
-                                    a:hover{
-                                        color: white;
-                                    }                    
-                                }
-                            }
-                        }
-                    }
-                    .boton{
-                        margin-top: 220px;
-                        display: none;
-                    }
-                }
                 .titular{
-                    margin-top: 19vh;
                     h1{
-                        font-size: 32px;
-                        padding-top: 20px;
+                        padding-top: 75px;
                     }
                     .botones{
                         a{
                             padding:20px 40px;
                             line-height: 100px;
                         }
-                        .scrollDown{
-                            img{
-                                margin-top: 0px;
-                            }
-                        }
                     }
                 }
             }
         }            
-        #discografia {
-            a{
-                background: #E0FF00;
-                color: black;
-                padding: 14px 19px;
-                line-height: 50px;
-                font-size: 13px;
-            }
-            .contenedor{
-                flex-direction: column;
-                .foto{
-                    width: 82%;
-                    margin-top: 20px;
-                }
-                .texto{
-                    width: 100%;
-                }
-            }
-        }
-        #about {
-            .contenedor{
-                .contenedor-textos{
-                    flex-direction:column;
-                }
-            }
-        }
         #tour {
-            padding: 60px 0;
+            padding: 1px 0;
             .contenedor{
-                flex-direction: column;
                 .imagen{
-                    width: 65%;
-                    position: relative;
-                    top: -27px;
-                }
-                .texto{
-                    width: 100%;
+                    top: -40px;
                 }
             }
-            .fechas{
-                flex-direction: column;
-                div{
-                    margin-bottom: 10px;
-                }
-                .boton{
-                    margin-bottom: 10px;
-                    a{
-                        background: white;
-                        color: black;
-                        padding: 15px 30px;
+        }
+        #bio{
+            .contenedor{
+                .texto-bio{
+                    .bloque_parrafo_bio{
+                        width: auto;
+                        float: none;
+                        p{
+                            color:#121212;
+                        }
+                    }
+                    .contenedor_foto_perfil{
+                        width: auto;
+                        float: none;
+                        .foto_perfil{
+                            size: 70%;
+                        }
+                        .links_redes{
+                            a{
+                                img{
+                                    width:2.5vmax !important;
+                                    height:2.5vmax !important;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1400,8 +1173,8 @@
         }
         #music{
             .contenedor{
-                padding-left:20px;
-                padding-right:20px;
+                padding-left:15%;
+                padding-right:15%;
                 .card-deck{
                     .card{
                         width:100% !important;
@@ -1449,6 +1222,18 @@
         }
     }
 }
+
+@media only screen and (min-width:575px) and (max-width:478px) {
+    body{
+        #music{
+            .contenedor{
+                padding-left:15% !important;
+                padding-right:15% !important;
+            }
+        }
+    }
+}
+
 @-webkit-keyframes AnimationGradient {
     0%{background-position:0% 0%}
     50%{background-position:93% 100%}
@@ -1464,12 +1249,6 @@
     50%{background-position:93% 100%}
     100%{background-position:0% 0%}
 }
-
-
-
-
-
-
 
 #header.header-scrolled {
     background: #000000;
