@@ -516,7 +516,7 @@
                         height: 100%;
                         z-index: 9999;
                         background: url('../imagenes/loading-25.gif') 50% 50% no-repeat rgb(249,249,249);
-                        background-size: 25%;
+                        background-size: 5%;
                         opacity: .8;
                     }
                     iframe{
@@ -731,7 +731,7 @@
         }
     }
 }
-@media only screen and (max-width:953px) {
+@media only screen and (max-width:1002px) {
     body{
         header{
             .contenedor{

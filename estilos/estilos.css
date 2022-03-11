@@ -666,7 +666,7 @@
   height: 100%;
   z-index: 9999;
   background: url("../imagenes/loading-25.gif") 50% 50% no-repeat #f9f9f9;
-  background-size: 25%;
+  background-size: 5%;
   opacity: .8;
 }
 
@@ -905,7 +905,7 @@
   font-family: "jost";
 }
 
-@media only screen and (max-width: 953px) {
+@media only screen and (max-width: 1002px) {
   body header .contenedor .menu .boton {
     display: none !important;
   }
