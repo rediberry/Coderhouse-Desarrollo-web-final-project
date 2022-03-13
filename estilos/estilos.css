@@ -39,6 +39,7 @@
   height: 100%;
   margin: auto;
   padding: 5% 5%;
+  cursor: url(../imagenes/chevrons-down.svg), auto;
 }
 
 * body header .contenedor .menu {
@@ -127,7 +128,7 @@
 }
 
 * body header .contenedor .titular {
-  margin-top: 19vh;
+  margin-top: 5%;
   color: #fff;
 }
 
@@ -167,35 +168,6 @@
 
 * body header .contenedor .titular .botones .blanco:hover {
   background: #e6e4e4 !important;
-}
-
-* body header .contenedor .titular .botones .scrollDown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-* body header .contenedor .titular .botones .scrollDown img {
-  margin-top: 0px;
-}
-
-* body header .contenedor .titular .botones .scrollDown img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-* body header .contenedor .titular .botones .scrollDown a {
-  background: #e1ff0000;
-  color: black;
-  padding: 14px 19px;
-  line-height: 50px;
-  font-size: 13px;
 }
 
 * body #discografia {
@@ -905,7 +877,7 @@
   font-family: "jost";
 }
 
-@media only screen and (max-width: 1002px) {
+@media only screen and (max-width: 920px) {
   body header .contenedor .menu .boton {
     display: none !important;
   }
@@ -980,14 +952,14 @@
   body header .contenedor .menu .boton {
     -webkit-box-shadow: 0px 0px 15px 2px #E0FF00;
     box-shadow: 0px 0px 15px 2px #E0FF00;
-    margin: 20px 20px;
+    margin: 20px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   body header .contenedor .menu .boton a {
-    padding: 20px 40px;
-    font-size: 13px;
+    padding: 5px 15px;
+    font-size: 10px;
   }
   body header .contenedor .menu .boton:hover a {
     background: yellow;
@@ -996,21 +968,20 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding: 20px 120px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
   }
   body header .contenedor .titular h1 {
-    font-size: 50px;
+    font-size: 200%;
     width: 100%;
   }
   body header .contenedor .titular .botones a {
-    padding: 20px 40px;
-    line-height: 100px;
+    padding: 10px 20px;
+    font-size: 10px;
   }
   body header .contenedor .titular .botones .botones:hover {
     background: yellow;
-  }
-  body header .contenedor .titular .botones .scrollDown {
-    margin-top: -100px;
   }
   body #discografia p {
     font-size: 14px;
