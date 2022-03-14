@@ -1,0 +1,26 @@
+footer{
+    text-align: center;
+    padding: 20.8px 20.8px;
+    background: white;
+    h3{
+        font-size: 14px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .contenedor{
+        .redes{
+            a{
+                text-decoration: none;
+                img{
+                    width: 20px !important;
+                    height: 20px !important;
+                    margin: 10px 7px;
+                }
+            }
+        }
+        p{
+            font-family: "jost";
+        }
+    }
+}

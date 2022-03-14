@@ -849,34 +849,6 @@
           filter: none;
 }
 
-* body footer {
-  text-align: center;
-  padding: 20.8px 20.8px;
-  background: white;
-}
-
-* body footer h3 {
-  font-size: 14px;
-}
-
-* body footer p {
-  font-size: 14px;
-}
-
-* body footer .contenedor .redes a {
-  text-decoration: none;
-}
-
-* body footer .contenedor .redes a img {
-  width: 20px !important;
-  height: 20px !important;
-  margin: 10px 7px;
-}
-
-* body footer .contenedor p {
-  font-family: "jost";
-}
-
 @media only screen and (max-width: 920px) {
   body header .contenedor .menu .boton {
     display: none !important;
@@ -1366,30 +1338,6 @@
   }
 }
 
-@-webkit-keyframes AnimationGradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 93% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-@keyframes AnimationGradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 93% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
 #header.header-scrolled {
   background: #000000;
   padding: 20px 0;
@@ -1630,6 +1578,58 @@ body.mobile-nav-active #mobile-nav {
   }
   #mobile-nav-toggle {
     display: inline;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20.8px 20.8px;
+  background: white;
+}
+
+footer h3 {
+  font-size: 14px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer .contenedor .redes a {
+  text-decoration: none;
+}
+
+footer .contenedor .redes a img {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 10px 7px;
+}
+
+footer .contenedor p {
+  font-family: "jost";
+}
+
+@-webkit-keyframes AnimationGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 93% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes AnimationGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 93% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
