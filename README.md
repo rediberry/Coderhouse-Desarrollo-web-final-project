@@ -6,12 +6,12 @@
 * Sass
 * Font Awesome Icons
 * Google Fonts
-* Libraries (SweetAlert, Toastify)
+* Libraries (Bootstrap 4.6)
 * iframes from Soundcloud an Spotify
 * Grid Gallery, card deck and a carrousel
 * Wufoo forms
 * Sumo (email capture tool)
-* SEO (as it has a score of xx on PageSpeed Insights by Google).
+* SEO (as it has a score of 89 on PageSpeed Insights by Google).
 
 # How I made it:
 
