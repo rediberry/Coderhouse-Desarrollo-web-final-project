@@ -1,0 +1,34 @@
+# Title
+
+# What things I made use of:
+
+* HTML5/CSS3
+* Sass
+* Font Awesome Icons
+* Google Fonts
+* Libraries (SweetAlert, Toastify)
+* iframes from Soundcloud an Spotify
+* Grid Gallery, card deck and a carrousel
+* Wufoo forms
+* Sumo (email capture tool)
+* SEO (as it has a score of xx on PageSpeed Insights by Google).
+
+# How I made it:
+
+* 
+* 
+* 
+* 
+* 
+
+# You can:
+
+* 
+* 
+* 
+* 
+* 
+* 
+
+## You can watch it live here:
+https://rediberry.github.io/Coderhouse-Desarrollo-web-final-project/
