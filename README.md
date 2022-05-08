@@ -1,4 +1,5 @@
-# Title
+# DJ/Producer Website
+It is a website created as a final project for the Coderhouse web development course (for DJ/producer Alejandro Maria).  
 
 # What things I made use of:
 
