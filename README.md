@@ -13,22 +13,5 @@
 * Sumo (email capture tool)
 * SEO (as it has a score of 89 on PageSpeed Insights by Google).
 
-# How I made it:
-
-* 
-* 
-* 
-* 
-* 
-
-# You can:
-
-* 
-* 
-* 
-* 
-* 
-* 
-
 ## You can watch it live here:
 https://rediberry.github.io/Coderhouse-Desarrollo-web-final-project/
