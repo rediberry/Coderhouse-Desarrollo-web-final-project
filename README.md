@@ -1,6 +1,8 @@
 # DJ/Producer Website
 It is a website created as a final project for the Coderhouse web development course (for DJ/producer Alejandro Maria).  
 
+Check the certificate on the [Coderhouse page](https://www.coderhouse.com/certificados/6238cf96713f4b001ad0fa2f)
+
 # What things I made use of:
 
 * HTML5/CSS3
