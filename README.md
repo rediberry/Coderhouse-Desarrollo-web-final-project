@@ -1,4 +1,5 @@
-# Title
+# DJ/Producer Website
+It is a website created as a final project for the Coderhouse web development course (for DJ/producer Alejandro Maria).  
 
 # What things I made use of:
 
@@ -12,23 +13,6 @@
 * Wufoo forms
 * Sumo (email capture tool)
 * SEO (as it has a score of 89 on PageSpeed Insights by Google).
-
-# How I made it:
-
-* 
-* 
-* 
-* 
-* 
-
-# You can:
-
-* 
-* 
-* 
-* 
-* 
-* 
 
 ## You can watch it live here:
 https://rediberry.github.io/Coderhouse-Desarrollo-web-final-project/
