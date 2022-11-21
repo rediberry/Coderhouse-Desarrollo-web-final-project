@@ -32,6 +32,14 @@
     <!-- Fin Titulo y SEO -->
 </head>
 <body>
+    <div class="noise"></div>
+    <div id="cursor"></div>
+    <div class="loader-wrapper">
+        <span class="loader">
+        <img src="./loading.gif" />
+        <span class="loader-text">Loading...</span>
+        </span>
+    </div>
     <header id="#header-full"><!-- #header-principal -->
         <div class="contenedor">
             <div class="menu">
@@ -105,14 +113,11 @@
             <div class="contenedor-textos">
             <div class="texto-izquierda">
                 <h2>A little bit of history</h2>
-                <p>I was born into a family of musicians, so ever since I can remember I’ve been surrounded by music. I began composing and recording when I was 11 and have been experimenting with
-                    new instruments and sounds ever since. Over the past decade, I’ve taken my music from an
-                    organized hobby to a full time career.  I work with recording artists, and other clients to help
-                    create and fulfill their musical visions, but I also have my own releases!</p>
+                <p>I was born in Buenos Aires Argentina in the mid 80s. My interest in music started since I was a child in the 90's with the popular music of that time. After a few years taking some production courses I started playing around making my own tracks, Remixes and DJ Sets. In 2020 was when I finally decided to send my productions to labels of the "Nu Disco" genre, they had an instant impact and I was able to sign with labels such as Young Society Recordings, Tropical Velvet, Disco Balls, Mango Sounds, Chopshop, Feverball, Spa un Disco, Etc.</p>
             </div>
             <div class="texto-derecha">
                 <h2>in a few words</h2>
-                <p>I’m Alejandro Maria a music producer, mixer, and engineer.  I create fresh, unique
+                <p>I'm Alejandro Maria a DJ Producer.  I create fresh, unique
                     instrumentals and songs from my studio based in Buenos Aires, Argentina.  I love house
                     music and have a passion for making lots of it – from old school to future-sounding
                     electronic, and everything in between.</p>
@@ -132,17 +137,17 @@
             <div class="texto">
                 <h4>Events</h4>
                 <h2>Buy tickets for upcoming dates</h2>
-                <p>Find live music near you. Buy tickets for Alejandro Maria upcoming concert, festival, gig and tour date taking place in Buenos Aires in 2022. Don't miss the first live tour in over 2 years. Amazing seats are on sale now. Treat yourself to good vibes and great music from the best seats with Platinum Seats.</p>
+                <p>Find live music near you. Buy tickets for Alejandro Maria upcoming concert, festival, gig and tour date taking place in Buenos Aires in 2023. Don't miss the first live tour in over 2 years. Amazing seats are on sale now. Treat yourself to good vibes and great music from the best seats with Platinum Seats.</p>
             </div>
         </div>
             <div class="fechas">
                 <div class="numero">19</div>
                 <div class="fecha">
-                    <h5>Mar</h5>
+                    <h5>Dec</h5>
                     <p>2022</p>
                 </div>
                 <div class="lugar">
-                    <h5>Club Araoz</h5>
+                    <h5>Club 69</h5>
                     <p>Buenos Aires, Argentina</p>
                 </div>
                 <div class="boton"><a href="https://www.ticketek.com.ar/" target=_blank>Buy ticket ></a></div>
@@ -150,7 +155,7 @@
             <div class="fechas">
                 <div class="numero">26</div>
                 <div class="fecha">
-                    <h5>Mar</h5>
+                    <h5>Dec</h5>
                     <p>2022</p>
                 </div>
                 <div class="lugar">
@@ -162,8 +167,8 @@
             <div class="fechas">
                 <div class="numero">02</div>
                 <div class="fecha">
-                    <h5>Abr</h5>
-                    <p>2022</p>
+                    <h5>Jan</h5>
+                    <p>2023</p>
                 </div>
                 <div class="lugar">
                     <h5>Mute</h5>
@@ -291,6 +296,14 @@
                 $('#header-full').slideDown(0);
             }
         });
+    </script>
+    <script>
+        window.addEventListener("load", event => {
+            const loader = document.querySelector(".loader-wrapper");
+            setTimeout(() => {
+                loader.classList.add("hidden");
+            }, 800);
+        })
     </script>
 </body>
 </html>

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AACA,kBAAkB,CAAlB,iBAAkB;EACd,EAAE;IAAC,mBAAmB,EAAC,KAAK;;EAC5B,GAAG;IAAC,mBAAmB,EAAC,QAAQ;;EAChC,IAAI;IAAC,mBAAmB,EAAC,KAAK;;;;AAElC,eAAe,CAAf,iBAAe;EACX,EAAE;IAAC,mBAAmB,EAAC,KAAK;;EAC5B,GAAG;IAAC,mBAAmB,EAAC,QAAQ;;EAChC,IAAI;IAAC,mBAAmB,EAAC,KAAK;;;;AAElC,UAAU,CAAV,iBAAU;EACN,EAAE;IAAC,mBAAmB,EAAC,KAAK;;EAC5B,GAAG;IAAC,mBAAmB,EAAC,QAAQ;;EAChC,IAAI;IAAC,mBAAmB,EAAC,KAAK",
-    "sources": [
-        "animationgradient.scss"
-    ],
-    "names": [],
-    "file": "animationgradient.css"
-}
+{"version":3,"sources":["animationgradient.scss","animationgradient.css"],"names":[],"mappings":"AACA;EACI;IAAG,0BAAA;ECCL;EDAE;IAAI,6BAAA;ECGN;EDFE;IAAK,0BAAA;ECKP;AACF;ADCA;EACI;IAAG,0BAAA;ECaL;EDZE;IAAI,6BAAA;ECeN;EDdE;IAAK,0BAAA;ECiBP;AACF","file":"animationgradient.css"}

@@ -3,26 +3,20 @@ footer {
   padding: 20.8px 20.8px;
   background: white;
 }
-
 footer h3 {
   font-size: 14px;
 }
-
 footer p {
   font-size: 14px;
 }
-
 footer .contenedor .redes a {
   text-decoration: none;
 }
-
 footer .contenedor .redes a img {
   width: 20px !important;
   height: 20px !important;
   margin: 10px 7px;
 }
-
 footer .contenedor p {
   font-family: "jost";
-}
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */

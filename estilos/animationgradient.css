@@ -9,7 +9,6 @@
     background-position: 0% 0%;
   }
 }
-
 @keyframes AnimationGradient {
   0% {
     background-position: 0% 0%;
@@ -20,5 +19,4 @@
   100% {
     background-position: 0% 0%;
   }
-}
-/*# sourceMappingURL=animationgradient.css.map */
+}/*# sourceMappingURL=animationgradient.css.map */

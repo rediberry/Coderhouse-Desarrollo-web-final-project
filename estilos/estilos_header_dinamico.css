@@ -2,7 +2,6 @@
   background: #000000;
   padding: 20px 0;
   height: 72px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -13,12 +12,10 @@
   left: 0;
   top: 0;
   right: 0;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 997;
   background-color: #121212;
-  -webkit-box-shadow: 5px 0px 15px #c3c3c3;
-          box-shadow: 5px 0px 15px #c3c3c3;
+  box-shadow: 5px 0px 15px #c3c3c3;
 }
 
 #header #logo h1 {
@@ -100,7 +97,6 @@
   background: none;
   font-size: 24px;
   display: none;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   outline: none;
   cursor: pointer;
@@ -131,7 +127,6 @@ body.mobile-nav-active #mobile-nav {
   left: -260px;
   width: 260px;
   overflow-y: auto;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -210,8 +205,7 @@ body.mobile-nav-active #mobile-nav {
 .nav-menu ul {
   margin: 4px 0 0 0;
   padding: 10px;
-  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   background: #fff;
 }
 
@@ -239,5 +233,4 @@ body.mobile-nav-active #mobile-nav {
   #mobile-nav-toggle {
     display: inline;
   }
-}
-/*# sourceMappingURL=estilos_header_dinamico.css.map */
+}/*# sourceMappingURL=estilos_header_dinamico.css.map */
